@@ -1,0 +1,93 @@
+@corDeFundo: #fc8bd0;
+@secundColor: #fff;
+@corDeFundo2: #f5d41c;
+@cordeFundo3: #a3609a;
+@fontFamily: 'Lato', sans-serif;
+
+* {
+    font-family: @fontFamily;
+}
+
+body {
+    background-color: @corDeFundo;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 250px;
+    margin-left: 400px;
+}
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+    img{
+        height: 85px;
+        margin-right: 16px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 56px;
+    
+    input {
+        font-size: 24px;
+        background-color: @secundColor;
+        border: 2px solid black;
+        border-bottom: 2px solid #000;
+        border-radius: 4px;
+        margin-inline: 5px;
+    }
+    
+    button {
+        background-color: @corDeFundo2;
+        color: @secundColor;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        padding: 8px;
+        margin-inline: 5px;
+        transition: 0.2s;
+            
+            &:hover {
+                background-color: @cordeFundo3;
+                color: @secundColor;
+            }
+        
+    }
+    
+}
+
+.item-completado {
+    text-decoration:line-through;
+    cursor: pointer;
+}
+
+ol {
+    background: @corDeFundo2;
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    li {
+        background: @secundColor;
+        color: rgb(12, 12, 12);
+        margin: 5px;
+    }
+}
